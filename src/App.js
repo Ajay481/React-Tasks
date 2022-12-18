@@ -1,6 +1,5 @@
-import "./Expenses/ExpenseItem";
-import Card from "./UI/Card";
-import ExpenseItem from "./Expenses/ExpenseItem";
+import Expenses from "./Expenses/Expenses";
+import NewExpense from "./Expenses/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -30,52 +29,10 @@ const App = () => {
     },
   ];
   return (
-    // <div>
-    //   <div>
-    //     {expenses.map((item) => {
-    //       return (
-    //         <div>
-    //           <ExpenseItem
-    //             title={item.title}
-    //             amount={item.amount}
-    //             date={item.date}
-    //           ></ExpenseItem>
-    //         </div>
-    //       );
-    //     })}
-    //   </div>
-    // </div>
-
-    <Card className="expenses">
-      <ExpenseItem
-        id={expenses[0].id}
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-        LocationofExpenditure={expenses[0].LocationofExpenditure}
-      ></ExpenseItem>
-      <ExpenseItem
-        id={expenses[1].id}
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-        LocationofExpenditure={expenses[1].LocationofExpenditure}
-      ></ExpenseItem>
-      <ExpenseItem
-        id={expenses[2].id}
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-        LocationofExpenditure={expenses[2].LocationofExpenditure}
-      ></ExpenseItem>
-      <ExpenseItem
-        id={expenses[3].id}
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}
-        LocationofExpenditure={expenses[3].LocationofExpenditure}
-      ></ExpenseItem>
-    </Card>
+    <div>
+      <NewExpense />
+      <Expenses items={expenses} />
+    </div>
   );
 };
 
