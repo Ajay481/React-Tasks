@@ -12,12 +12,14 @@ const ExpenseItem = (props) => {
     console.log(title);
   };
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <ExpenseDetails title={props.title} />
-      <ExpenseDetails amount={props.amount} />
-      <button onClick={clickHandler}>Change Title</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date} />
+        <ExpenseDetails title={props.title} />
+        <ExpenseDetails amount={props.amount} />
+        <button onClick={clickHandler}>Change Title</button>
+      </Card>
+    </li>
   );
 };
 
