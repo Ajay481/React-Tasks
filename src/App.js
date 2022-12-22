@@ -6,25 +6,25 @@ const DUMMY_EXPENSES = [
   {
     id: "e1",
     title: "Car Insurance",
-    amount: "Rs 4600",
+    amount: 799.25,
     date: new Date(2022, 7, 16),
   },
   {
     id: "e2",
     title: "Food",
-    amount: "Rs 2500",
+    amount: 294.5,
     date: new Date(2021, 2, 28),
   },
   {
     id: "e3",
     title: "Movies",
-    amount: "Rs 1500",
+    amount: 94.25,
     date: new Date(2021, 8, 25),
   },
   {
     id: "e4",
     title: "Petrol",
-    amount: "Rs 600",
+    amount: 125,
     date: new Date(2020, 5, 11),
   },
 ];
